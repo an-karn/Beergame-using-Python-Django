@@ -12,6 +12,10 @@ def eg(request):
 def greet(request, name):
     # your role is {role}.
     # return HttpResponse(f"Welocme, {name.capitalize()} to the beer game.")
-    return render(request, "server/greet.html", {
-        "name" : name.capitalize()
-    })
+    if (name.endswith(".php", len(name)-4, len(name)) == True or name.endswith(".html", len(name)-4, len(name))):
+        return render(request, "server/" + name)
+    
+    else:
+        return render(request, "server/greet.html", {
+            "name" : name.capitalize()
+        })
