@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Single Page</title>
+        <style>
+            div {
+                display: none;
+            }
+        </style>
+        <script src="singlepage.js"></script>
+    </head>
+    <body>
+        <button data-page="page1">Screen 1</button>
+        <button data-page="page2">Screen 2</button>
+        <button data-page="page3">Screen 3</button>
+        <button data-page="page4">Screen 4</button>
+        <div id="page1">
+            <h1>Input screen </h1>
+        </div>
+        <div id="page2">
+            <h1>Information for the last 10 weeks</h1>
+        </div>
+        <div id="page3">
+            <h1>Inventory and order status plots</h1>
+        </div>
+        <div id="page4">
+            <h1>Status of other supply chain channel members</h1>
+        </div>
+    </body>
+</html>
+
+// Shows one page and hides the other two
+function showPage(page) {
+
+    // Hide all of the divs:
+    document.querySelectorAll('div').forEach(div => {
+        div.style.display = 'none';
+    });
+
+    // Show the div provided in the argument
+    document.querySelector(`#${page}`).style.display = 'block';
+    
+     // The lines from 44 to 49 should be updated once figured out what should be written 
+               // fetch(`/page/${page}`)
+                // .then(response => response.text())
+                // .then(text => {
+                    // Log text and display on page
+                   // console.log(text);
+                   // document.querySelector('#content').innerHTML = text;
+                // });
+            }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Select all buttons
+    document.querySelectorAll('button').forEach(button => {
+
+        // When a button is clicked, switch to that page
+        button.onclick = function() {
+            showPage(this.dataset.page);
+        }
+    })
+    
+    window.onpopstate = function(event) {
+    console.log(event.state.page);
+    showPage(event.state.page);
+}
+
+function showPage(page) {
+    fetch(`/page/${page}`)
+    .then(response => response.text())
+    .then(text => {
+        console.log(text);
+        document.querySelector('#content').innerHTML = text;
+    });
+
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('button').forEach(button => {
+        button.onclick = function() {
+            const section = this.dataset.page;
+
+            // Add the current state to the history
+            history.pushState({page: page}, "", `page${page}`);
+            showPage(page);
+        };
+    });
+});
+});
