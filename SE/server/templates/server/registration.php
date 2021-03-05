@@ -1,3 +1,17 @@
+<?php
+    if(!isset($_COOKIE['is_auth'])):
+        header("Location: ./admin_login.php?status=sign_in_required");
+    endif;
+    $servername = "localhost";
+    $db_user = "group7";
+    $db_pass = "KVSzuH";
+    $db_name = "group7";
+    $conn = mysqli_connect($servername, $db_user, $db_pass, $db_name);
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <h1>Welcome to the beer Game</h1>
