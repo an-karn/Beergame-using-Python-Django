@@ -114,7 +114,8 @@ a:hover {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     position: sticky;
-    top:100%;
+    /* top:00%; */
+    bottom: 0%;
     padding: 10px;
 }
 

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Play Beer Game</title>
+    </head>
+    <body>
+        <div id="play_intro">
+            <h3>Please fill out the following data to create a game</h3>
+            <div>
+                {% csrf %}
+                {{ form }}
+            </div>
+        </div>
+    </body>
+</html>
