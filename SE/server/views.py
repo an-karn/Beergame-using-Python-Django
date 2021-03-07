@@ -15,34 +15,40 @@ class playerInfoForm(forms.Form):
 def index(request):
     return render(request, "server/index.html" )
 
-def register(request, name):
+def register(request):
     # your role is {role}.
+
     if request.method == "POST":
         form = playerInfoForm(request.POST)
         if (form.is_valid()):
             playerName = form.cleaned_data["playerName"]
-            return HttpResponseRedirect("index.html")
+            return HttpResponseRedirect('index.html')
         else:
-            return render(request, "server/" + name , {
+            return render(request, "server/registration.html" , {
                 "form" : form
             })
 
-    # elif (name.endswith(".php", len(name)-4, len(name)) == True or name.endswith(".html", len(name)-5, len(name)) == True):
-        return render(request, "server/" + name, {
-            "form" : playerInfoForm()
-        })
+        # # elif (name.endswith(".php", len(name)-4, len(name)) == True or name.endswith(".html", len(name)-5, len(name)) == True):
+        #     return render(request, "server/registration.html", {
+        #         "form" : playerInfoForm()
+        #     })
+    return render(request, "server/registration.html", {
+        "form" : playerInfoForm()
+    })
 
 class GameCreationForm(forms.Form):
-    class Meta:
-        game_name = forms.CharField(label = "Game Name")
-        session_length = forms.Integer(label = "Length of Game")
-        players_present = forms.checklist(label = "Players Present") #Here we have to 
+    game_name = forms.CharField(label = "Game Name")
+    session_length = forms.IntegerField(label = "Length of Game")
+    # players_present = forms.MultipleChoiceField(
+    #     queryset = queryset_of_valid_choices, # not optional, use .all() if unsure
+    #     widget  = forms.CheckboxSelectMultiple,) #Here we have to 
                             # add the check list with options Distributor and Wholesaler
-        info_sharing = forms.Boolean(label="Information sharing allowed")
-        info_delay = forms.Integer(label="Information Delay")
-        starting_inventory = forms.Integer(label="Inventory Game starts with")
-        holding_cost = forms.Interger(label="Holding Cost")
-        backlog_cost = forms.Interger(label="Backlog Cost")
+                            # <input type="checkbox" value="{{item.id}}" name="choices">
+    info_sharing = forms.BooleanField(label="Information sharing allowed")
+    info_delay = forms.IntegerField(label="Information Delay")
+    starting_inventory = forms.IntegerField(label="Inventory Game starts with")
+    holding_cost = forms.IntegerField(label="Holding Cost")
+    backlog_cost = forms.IntegerField(label="Backlog Cost")
 
 def create(request):
     return render(request, "server/create.html", {

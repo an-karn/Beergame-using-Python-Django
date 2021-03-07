@@ -3,39 +3,6 @@ body{
     color: white;
 }
 
-#Topbar {
-    background-image: linear-gradient(to right,black,gray);
-    height: 12%;
-    width: 100%;
-    color: black; 
-    position: fixed;
-    top: 2%;
-    left: 15%;
-    color: white;
-}
-
-#useroptions{
-    background-color: gray;
-    color: black;
-    position: relative;
-}
-
-#useroptions_dropdown {
-    position: fixed;
-    background-color: gray;
-    color: black;
-    position: relative;
-}
-
-#useroption_dropdown option{
-    position: fixed;
-    background-color: gray;
-    color: black;
-    position: relative;
-    display: inline-block;
-}
-
-
 #Miscellanous {
     position: fixed;
     top: 13%;
@@ -117,20 +84,4 @@ a:hover {
     /* top:00%; */
     bottom: 0%;
     padding: 10px;
-}
-
-.admin_buttons{
-    position: absolute;
-    left: 75%;
-    top: 50%;
-    background-color: ivory;
-    color: red;
-}
-
-.admin_buttons:hover{
-    position: absolute;
-    left: 75%;
-    top: 50%;
-    background-color: red;
-    color: ivory;
 }

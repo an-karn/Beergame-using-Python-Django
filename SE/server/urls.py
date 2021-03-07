@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path ("registration.php", views.register, name="register"),
+    path("index.html", views.index, name="index"),
+    path ("registration.html", views.register, name="register"),
     path ("create.html", views.create, name="create")
 ]

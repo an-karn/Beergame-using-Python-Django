@@ -13,4 +13,6 @@ class PlayerTestCase(TestCase):
         p2 = player.object.create(name="Horatio", role="wholesaler", inventory=5, cost=5.5, demand=45)
  
         # i1 = instructor.object.create(name="Pete", )
-        def test_
+        def test_player_count(self):
+            p = player.object.get(name="Hamlet")
+            self.assertEqual(a.)

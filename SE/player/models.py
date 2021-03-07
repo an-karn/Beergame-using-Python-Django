@@ -5,9 +5,9 @@ from django.db import models
 class player(models.Model):
     name = models.CharField(max_length=64)
     role = models.CharField(max_length=15)
-    demand = models.Integer()
-    cost = models.Integer()
-    inventory = models.Integer()
+    demand = models.IntegerField()
+    cost = models.IntegerField()
+    inventory = models.IntegerField()
 
     def is_valid(self):
         return self.role != None or self.cost > 0 or self.inventory >= 0

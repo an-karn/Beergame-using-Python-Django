@@ -3,7 +3,7 @@ from django import forms
 
 # Create your views here.
 def index(request):
-    return render(request, "player/index.html")
+    return render(request, "player/player_index.html")
 
 # <!-- length of the game , Player required => radio multiple, information sharing, 
 #                     information delay, holding cost backlog cost 
