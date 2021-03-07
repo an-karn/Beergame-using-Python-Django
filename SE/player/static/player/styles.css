@@ -5,7 +5,7 @@
   }
   
   .scroll a {
-    background-color: #eee;
+    background-color:white;
     color: black;
     display: block;
     padding: 12px; 
@@ -13,10 +13,10 @@
   }
   
   .scroll a:hover {
-    background-color: #ccc;
+    background-color:white;
   }
   
   .scroll a.active {
-    background-color: #4CAF50;
+    background-color: gray;
     color: white;
   }

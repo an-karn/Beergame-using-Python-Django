@@ -9,6 +9,14 @@ class player(models.Model):
     cost = models.Integer()
     inventory = models.Integer()
 
+    def is_valid(self):
+        return self.role != None or self.cost > 0 or self.inventory >= 0
+
 # Now after this class we can create functions to change a certain value
 # This is done in the player.py file in the main repository
 
+class instructor(models.Model):
+    name = models.CharField(max_length=64)
+    
+
+    # def is_valid(self):
