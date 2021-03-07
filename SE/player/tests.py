@@ -8,7 +8,9 @@ class PlayerTestCase(TestCase):
         #create object sample data 
         # this is a seperate database on which we test
 
-        p1 = player.object.create(name="Hamlet", role="distributor", inventory=10, cost=7.5, demand=45)
+        # inventory=10, cost=7.5, demand=45
+        p1 = player.object.create(name="Hamlet", role="distributor")
         p2 = player.object.create(name="Horatio", role="wholesaler", inventory=5, cost=5.5, demand=45)
-
+ 
         # i1 = instructor.object.create(name="Pete", )
+        def test_
