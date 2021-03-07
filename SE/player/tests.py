@@ -10,3 +10,5 @@ class PlayerTestCase(TestCase):
 
         p1 = player.object.create(name="Hamlet", role="distributor", inventory=10, cost=7.5, demand=45)
         p2 = player.object.create(name="Horatio", role="wholesaler", inventory=5, cost=5.5, demand=45)
+
+        # i1 = instructor.object.create(name="Pete", )

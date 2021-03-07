@@ -17,3 +17,5 @@ python3 manage runserver
 to initialize the Django manager program this will allow you to navigate the website. Currently the python logic checks for an exten eg http://127.0.0.1:8000/server/registration.php if the end ends with an .html or .php there should be a page given to the user however is a string is provided there is just and example page.
 
 There are additional css files created in the static folder unser SE/server/templates/server/syles.css these are stactics files and Django can interpret them in the same way. 
+
+The test are created in the tests.py file provided by Django. This can be used to create objects for each type of class. This was done for the players in the player app(folder).

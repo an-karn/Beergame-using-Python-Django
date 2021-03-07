@@ -15,8 +15,8 @@ class player(models.Model):
 # Now after this class we can create functions to change a certain value
 # This is done in the player.py file in the main repository
 
-class instructor(models.Model):
-    name = models.CharField(max_length=64)
-    
+# class instructor(models.Model):
+#     name = models.CharField(max_length=64)
+#     email = models.EmailField()
 
     # def is_valid(self):
