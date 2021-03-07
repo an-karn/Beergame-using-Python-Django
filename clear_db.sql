@@ -1,0 +1,10 @@
+DROP TABLE created;
+DROP TABLE pattern;
+DROP TABLE pattern_instructor;
+DROP TABLE pattern_player;
+drop table demandPattern; 
+DROP TABLE instructs; 
+DROP TABLE plays_in;
+DROP TABLE game;
+DROP TABLE instructor;
+DROP TABLE player;
