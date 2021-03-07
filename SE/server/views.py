@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django import forms
 from django.urls import reverse
 
+# Here you can changne forms.Form to forms.ModelForm as a database is being use to store the information
 class playerInfoForm(forms.Form):
     playerName = forms.CharField(label = "playerName")
     email = forms.EmailField(label = "email", max_length = 254)
