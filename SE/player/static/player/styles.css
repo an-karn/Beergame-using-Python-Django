@@ -1,0 +1,22 @@
+.scroll {
+    width: 200px;
+    height: 150px;
+    overflow-y: auto;
+  }
+  
+  .scroll a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px; 
+    text-decoration: none;
+  }
+  
+  .scroll a:hover {
+    background-color: #ccc;
+  }
+  
+  .scroll a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
