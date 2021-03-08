@@ -1,0 +1,51 @@
+
+npm install mocha chai --save-dev
+
+"scripts": {
+    "test": "mocha"
+ },
+ 
+// project directory folder structure
+// |test
+// |src
+// |node_modules
+// package.json
+ 
+ describe("validator isValid()", () => {
+
+	before(()=> {
+	})
+
+	after(()=> {	
+	})
+
+	beforeEach(()=> {
+	})
+
+	afterEach(()=> {
+	})
+
+     it("should return true for user role as player or instructor", ()=>   {
+
+	})
+
+	it("should return false when added any other word", () => {
+
+	})
+
+	const chai = require('chai')
+const expect = chai.expect
+
+const validator = require('../app/validator')
+
+describe("validator isWordValid()", () => {
+
+	it("should return true for user role as player or instructor", ()=> {
+		expect(validator.isWordValid(Player)).to.be.true
+	})
+
+	it("should return false when added any other word", () => {
+		expect(validator.isWordValid(None)).to.be.false
+	})
+
+})
