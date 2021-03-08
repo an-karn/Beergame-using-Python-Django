@@ -12,3 +12,5 @@ All the above changes RE towards the web platform. Now we have also included req
 - In addition adding all functions for the player entity in the player.py file
 - And a simple layout for the user interface in the user interface file.
 - Also the supplychainstatics.py file uses matplotlib.pyplot library provided by python to create plots for the different player(Retailers, Wholesaler etc)
+
+In addition there is the readme in SE django folder please read additional features added there. 
