@@ -61,6 +61,27 @@ print(cost_obj.cost)
 cost_obj.cost = (input("Set cost: "))
 print(cost_obj.cost)
 
+class Player:
+   def __init__(self, shipment=0):
+      self.shipment =shipment
+      
+print("Current shipment is 0")
+
+@property
+def Aboutshipment(self):
+      return self.shipment
+
+@Aboutshipment.setter
+def Aboutshipment(self, s):
+      self.shipment = s
+
+shipment_obj = Player()
+print(shipment_obj.shipment)
+
+shipment_obj.shipment = (input("Set shipment: "))
+print(shipment_obj.shipment)
+
+
 
 
 class Player:
