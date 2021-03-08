@@ -12,7 +12,7 @@ Web platform:
 
 
 All the above changes RE towards the web platform. Now we have also included requirements files and creating entity functions :
-- The main functions for the player entity can be found in the "player.py" file regarding role,demand, order, inventory.
+- The main functions for the player entity can be found in the "player.py" file regarding role,demand, shipment, inventory.
 - Furthermore, a simple layout for the user interface was added to the "user interface file" providing the 4 screen divisions and simple interaction between them.
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 
