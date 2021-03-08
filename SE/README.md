@@ -13,8 +13,7 @@ on the terminal.
 A great advantage of using Django is that it allows the programming to use python logic if statements and classes to render the page according. An simple example is isitchristmas.com where the entire page is render over the date check.
 
 To be able to run the Django project on your local machine after an git clone of the project you can use the commmand :
-python3 manage runserver 
-to initialize the Django manager program this will allow you to navigate the website. Currently the python logic checks for an exten eg http://127.0.0.1:8000/server/registration.php if the end ends with an .html or .php there should be a page given to the user however is a string is provided there is just and example page.
+python3 manage runserver to initialize the Django manager program this will allow you to navigate the website.
 
 There are additional css files created in the static folder unser SE/server/templates/server/syles.css these are stactics files and Django can interpret them in the same way. 
 
@@ -22,7 +21,7 @@ The test are created in the tests.py file provided by Django. This can be used t
 
 In addition below you can find some links to test once the server is running on your computer using first source newenv/bin/activate and then run python3 manage.py runserver. There would be an output of the localhost ip and port 8000 using those credential open the following links:
 
-http://127.0.0.1:8000/ -> here you can also view registration.html
-http://127.0.0.1:8000/create.html
-http://127.0.0.1:8000/player/
-http://127.0.0.1:8000/player/logged_in.html -> this has to be changed to actually view the inventory , backlog , button to demand plots etc.
+- http://127.0.0.1:8000/ -> here you can also view registration.html
+- http://127.0.0.1:8000/create.html
+- http://127.0.0.1:8000/player/
+- http://127.0.0.1:8000/player/logged_in.html -> this has to be changed to actually view the inventory , backlog , button to demand plots etc.
