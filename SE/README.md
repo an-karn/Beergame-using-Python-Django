@@ -19,3 +19,10 @@ to initialize the Django manager program this will allow you to navigate the web
 There are additional css files created in the static folder unser SE/server/templates/server/syles.css these are stactics files and Django can interpret them in the same way. 
 
 The test are created in the tests.py file provided by Django. This can be used to create objects for each type of class. This was done for the players in the player app(folder).
+
+In addition below you can find some links to test once the server is running on your computer using first source newenv/bin/activate and then run python3 manage.py runserver. There would be an output of the localhost ip and port 8000 using those credential open the following links:
+
+http://127.0.0.1:8000/ -> here you can also view registration.html
+http://127.0.0.1:8000/create.html
+http://127.0.0.1:8000/player/
+http://127.0.0.1:8000/player/logged_in.html -> this has to be changed to actually view the inventory , backlog , button to demand plots etc.
