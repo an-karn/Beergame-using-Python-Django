@@ -22,7 +22,7 @@ def register(request):
         form = playerInfoForm(request.POST)
         if (form.is_valid()):
             playerName = form.cleaned_data["playerName"]
-            return HttpResponseRedirect('index.html')
+            return HttpResponseRedirect('/')
         else:
             return render(request, "server/registration.html" , {
                 "form" : form
