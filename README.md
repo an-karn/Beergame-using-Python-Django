@@ -17,7 +17,7 @@ Regarding other created tests:
 - One would be if a player is an instructor or not. This is saved in the boolean variable in the registation form.
 - A second test added in the player/test.py file refers to if the player is looged_in currently as no session_variables are created. We are just checking if the logged_in.html page is rendered or not. Later this should be changed to a session variable.
 
-Additional test that should be added:
+Additional tests that should be added:
 - Once a player is logged_in, it should be tested if plots can ba accessed. 
 - In addition, another testing regarding the different screens are available for the player. This can be done by checking if the different html pages can be rendered.
 - In the "active_in game check" file, test cases were provided in oder to check which player is active in which game. This is also helpful for the player_index.html as all the active games are to be shown insted of sample "Game #" number.
