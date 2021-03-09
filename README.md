@@ -34,5 +34,5 @@ Finally, we added migrations (communications with an sqlite3 database) using the
                                  p = player(id = 1, name='Hamlet', role='distributor', demand=20,cost='10',inventory='5');
                                  p.save();
 
-To check the above details that have been added, refer to the test using "player.objects.all()" which returns the number of objects found in the set.
+To check the above added details, please refer to the test using "player.objects.all()" which returns the number of objects found in the set.
 All migrations are saved in the "0001.inital file" that can be found in the "player/migrations".
