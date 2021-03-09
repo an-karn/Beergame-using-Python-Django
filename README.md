@@ -20,7 +20,7 @@ Regarding other created tests:
 Additional tests that should be added:
 - Once a player is logged_in, it should be tested if plots can ba accessed. 
 - In addition, another testing regarding the different screens are available for the player. This can be done by checking if the different html pages can be rendered.
-- In the "active_in game check" file, test cases were provided in oder to check which player is active in which game. This is also helpful for the player_index.html as all the active games are to be shown insted of sample "Game #" number.
+- In the "active_in game check" file, test cases were provided in oder to check which player is active in which game. This is also helpful for the "player_index.html" as all the active games are to be shown insted of sample "Game #" number.
 
 All the above changes are towards the web platform. Now we have also included requirements files and creating entity functions :
 - The main functions for the player entity can be found in the "player.py" file regarding role,demand, shipment, inventory.
