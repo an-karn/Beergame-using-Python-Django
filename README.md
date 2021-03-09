@@ -10,24 +10,23 @@ Web platform:
 - Folder labeled as "Sprint 1" contains information regarding the SQL(creating,clearing, checking and populating).
 - Using the "mysql" file provided by Django framework, one can include all the "create tables" command in the file create_tables.sql. This allows our Django web platform to interact with the tables and store values in the tables like a database. This requires additional installations pip install mysql.
 - There are comments on the code suggesting improvement not implemented due to a shortage of time.
-- Test cases for the Django web interface were provided in the SE/player/test.py, however, these test cases do not function yet as the table functionality provided by Django is not implemented yet.
+- Test cases for the Django web interface were provided in the SE/player/test.py however these test cases dont work yet as the table functionality provided by Django was not implemented yet.
 
 
-Regarding other created tests:
-- One would be if a player is an instructor or not. This is saved in the boolean variable in the registation form.
-- A second test added in the player/test.py file refers to if the player is looged_in currently as no session_variables are created. We are just checking if the logged_in.html page is rendered or not. Later this should be changed to a session variable.
+Tests done are :
+- if a player is an instructor or not this is saved in the boolean variable in the registation form
+- a second test added in the player/test.py file is if the player is looged_in currently as no session_variables are created we are just checking if the logged_in.html page is render or not. Later this should be changed to a session variable
 
-Additional tests that should be added:
-- Once a player is logged_in, it should be tested if plots can ba accessed. 
-- In addition, another testing regarding the different screens are available for the player. This can be done by checking if the different html pages can be rendered.
-- In the "active_in game check" file, test cases were provided in oder to check which player is active in which game. This is also helpful for the "player_index.html" as all the active games are to be shown insted of sample "Game #" number.
+Additional test should be:
+- Once a player is logged_in test if plots can ba accessed. 
+- in addition test if the different screens are available for the player. This can be done by checking if the different html pages can be render.
+ - active_in game check. Have test cases to check which player is active in which game. This is also helpful for the player_index.html ass all the active games are to be shown insted of sample "Game #" number
 
 All the above changes are towards the web platform. Now we have also included requirements files and creating entity functions :
 - The main functions for the player entity can be found in the "player.py" file regarding role,demand, shipment, inventory.
 - Furthermore, a simple layout for the user interface was added to the "user interface file" providing the 4 screen divisions and simple interaction between them.
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
-<<<<<<< HEAD
 
 Fianlly added migrations (communications with an sqlite3 database) using the python manage.py makemigrations. In addition run python manage.py migrate to apply all (create the tables) to store all the data. Now run command python manage.py shell and the shell you can add new inputs like : 
 
@@ -37,5 +36,4 @@ p.save()
 
 To check the above details have been added test using:
 player.objects.all(). Which returns the number of objects found in the set.
-=======
->>>>>>> c24699d88f8107ce637bb86bc082d573ad92df3a
+All migrations are saved in the 0001.inital file found in the player/migrations
