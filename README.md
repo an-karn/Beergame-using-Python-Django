@@ -16,6 +16,7 @@ Web platform:
 Tests done are :
 - if a player is an instructor or not this is saved in the boolean variable in the registation form
 - a second test added in the player/test.py file is if the player is looged_in currently as no session_variables are created we are just checking if the logged_in.html page is render or not. Later this should be changed to a session variable
+
 Additional test should be:
 - Once a player is logged_in test if plots can ba accessed. 
 - in addition test if the different screens are available for the player. This can be done by checking if the different html pages can be render.
