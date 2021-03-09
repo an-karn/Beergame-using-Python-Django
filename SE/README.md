@@ -1,6 +1,6 @@
 March 09:
 
-We are using Django framwork for this section of the Software project Development. Django is a python framwork that is used to create a interactive web service. Here we are assuming that the user knows and already has python installed on their machine along with having the latest version of pip is some error message does pop up it should inlcude the command to upgrade it.
+We are using Django framwork for this section of the Software project Development. Django is a python framwork that is used to create a interactive web service. Here we are assuming that the user knows and already has python installed on their machine along with having the latest version of pip is some error message does pop up it should inlcude the command to upgrade it. In addition another prerequisite would be having an Mysql server hosted on your laptop to add the commands from the Sprint\ 1/SQL tables and queries.
 
 To install the Django framwork you need to use pip3 install functional to down- load python programs. Run command:
 pip3 install Django
