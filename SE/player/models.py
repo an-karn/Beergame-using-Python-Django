@@ -9,6 +9,10 @@ class player(models.Model):
     cost = models.IntegerField()
     inventory = models.IntegerField()
 
+    # return a string representation of the object
+    def __str__(self):
+        return f"{self.id}: {self.name},{self.role},demand:{self.demand},cost:{self.cost},inventory:{self.inventory}"
+
     def is_valid(self):
         return self.role != None or self.cost > 0 or self.inventory >= 0
 
