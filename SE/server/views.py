@@ -17,7 +17,6 @@ def index(request):
 
 def register(request):
     # your role is {role}.
-
     if request.method == "POST":
         form = playerInfoForm(request.POST)
         if (form.is_valid()):
@@ -27,11 +26,6 @@ def register(request):
             return render(request, "server/registration.html" , {
                 "form" : form
             })
-
-        # # elif (name.endswith(".php", len(name)-4, len(name)) == True or name.endswith(".html", len(name)-5, len(name)) == True):
-        #     return render(request, "server/registration.html", {
-        #         "form" : playerInfoForm()
-        #     })
     return render(request, "server/registration.html", {
         "form" : playerInfoForm()
     })
@@ -64,3 +58,6 @@ def create(request):
     return render(request, "server/create.html", {
             "form" : GameCreationForm()
     })
+
+def login(request):
+    return render(request, "player/player_index.html")
