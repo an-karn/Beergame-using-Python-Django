@@ -27,3 +27,12 @@ All the above changes are towards the web platform. Now we have also included re
 - Furthermore, a simple layout for the user interface was added to the "user interface file" providing the 4 screen divisions and simple interaction between them.
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
+
+Fianlly added migrations (communications with an sqlite3 database) using the python manage.py makemigrations. In addition run python manage.py migrate to apply all (create the tables) to store all the data. Now run command python manage.py shell and the shell you can add new inputs like : 
+
+from player.models import player
+p = player(id = 1, name='Hamlet', role='distributor', demand=20,cost='10',inventory='5')
+p.save()
+
+To check the above details have been added test using:
+player.objects.all(). Which returns the number of objects found in the set.
