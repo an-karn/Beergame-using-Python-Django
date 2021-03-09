@@ -9,6 +9,7 @@ class playerInfoForm(forms.Form):
     email = forms.EmailField(label = "email", max_length = 254)
     username = forms.CharField(label = "username", min_length=4, max_length=15)
     password = forms.CharField(label="password" ,min_length=8, max_length=15, widget=forms.PasswordInput)
+    instructor = forms.BooleanField(label="Instructor")
 
 # Create your views here.
 # return HttpResponse("Welcome to the Beer Game!")
@@ -26,6 +27,13 @@ def register(request):
             return render(request, "server/registration.html" , {
                 "form" : form
             })
+
+    def is_instructor():
+        if playerInfoForm.instructor == True:
+            return True
+        else:
+            return False
+    
     return render(request, "server/registration.html", {
         "form" : playerInfoForm()
     })

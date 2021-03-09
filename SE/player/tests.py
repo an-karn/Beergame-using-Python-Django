@@ -13,6 +13,10 @@ class PlayerTestCase(TestCase):
         p2 = player.object.create(name="Horatio", role="wholesaler", inventory=5, cost=5.5, demand=45)
  
         # i1 = instructor.object.create(name="Pete", )
-        def test_player_count(self):
+        def test_player_login(self):
             p = player.object.get(name="Hamlet")
-            self.assertEqual(a.)
+            self.assertEqual(p.is_logged_in())
+        
+        def test_player_status(self):
+            p = player.object.get(name="Hamlet")
+            self.assertEqual(p.is_instructor())
