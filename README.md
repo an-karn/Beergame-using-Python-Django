@@ -9,10 +9,11 @@ Web platform:
 - Folder labeled as "beergame" containing work for the Frontend React.js interface.
 - Folder labeled as "Sprint 1" contains information regarding the SQL(creating,clearing, checking and populating).
 - Using the "sqlite" file provided by Django framework, one can include all the "create tables" command in the file create_tables.sql. This allows our Django web platform to interact with the tables and store values in the tables like a database. 
-- There are comments on the code suggesting improvement not implemented due to a shortage of time. In addition, taking into consideration that half of the given time for this assignment was spent on learning how to use Django for the web service, the implementation could not be efficiently done.
+- There are comments on the code suggesting improvement not implemented due to a shortage of time.
+- Test cases for the Django web interface were provided in the SE/player/test.py however these test cases dont work yet as the table functionality provided by Django was not implemented yet.
 
 
-All the above changes RE towards the web platform. Now we have also included requirements files and creating entity functions :
+All the above changes are towards the web platform. Now we have also included requirements files and creating entity functions :
 - The main functions for the player entity can be found in the "player.py" file regarding role,demand, shipment, inventory.
 - Furthermore, a simple layout for the user interface was added to the "user interface file" providing the 4 screen divisions and simple interaction between them.
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
