@@ -7,8 +7,18 @@
         <div id="play_intro">
             <h3>Please fill out the following data to create a game</h3>
             <div>
+                <form action="create.html" method="POST"></form>
                 {% csrf_token %}
-                {{ form }}
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                {% csrf_token %}
+                                {{ form }}
+                                <input name='create' type="submit" class = "buttons" value="create"></input>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
