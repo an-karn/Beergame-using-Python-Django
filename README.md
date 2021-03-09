@@ -35,4 +35,4 @@ Finally, we added migrations (communications with an sqlite3 database) using the
                                  p.save();
 
 To check the above added details, please refer to the test using "player.objects.all()" which returns the number of objects found in the set.
-All migrations are saved in the "0001.inital file" that can be found in the "player/migrations".
+All migrations are saved in the "0001.inital file" that can be found in the "player/migrations". All the above mentioned commands were used in the SE Django folder.
