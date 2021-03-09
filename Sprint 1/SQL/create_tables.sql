@@ -46,6 +46,13 @@ CREATE TABLE demandPattern (
     PRIMARY KEY (demandID)
 );
 
+CREATE TABLE demand (
+    demandID INTEGER NOT NULL UNIQUE,
+    weeks INTEGER NOT NULL,
+    demands INTEGER(9) NOT NULL,
+    PRIMARY KEY (demandID)
+);
+
 -- Tables for relationships
 
 CREATE TABLE instructs (
@@ -91,6 +98,14 @@ CREATE TABLE pattern_player (
 CREATE TABLE pattern_instructor (
     instructorID INTEGER,
     FOREIGN KEY (instructorID) REFERENCES instructor (instructorID) ON DELETE CASCADE ON UPDATE CASCADE,
+    demandID INTEGER,
+    FOREIGN KEY (demandID) REFERENCES demandPattern (demandID) ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY (instructorID,demandID)
+);
+
+CREATE TABLE demands_Plot (
+    demandID INTEGER,
+    FOREIGN KEY (demandID) REFERENCES demand (demandID) ON DELETE CASCADE ON UPDATE CASCADE,
     demandID INTEGER,
     FOREIGN KEY (demandID) REFERENCES demandPattern (demandID) ON DELETE CASCADE ON UPDATE CASCADE,
     PRIMARY KEY (instructorID,demandID)

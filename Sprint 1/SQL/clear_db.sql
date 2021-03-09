@@ -8,3 +8,4 @@ DROP TABLE plays_in;
 DROP TABLE game;
 DROP TABLE instructor;
 DROP TABLE player;
+DROP TABLE demand;
