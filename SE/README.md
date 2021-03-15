@@ -6,13 +6,15 @@ To install the Django framwork you need to use pip3 install functional to down- 
 pip3 install Django
 
 Now to start or create a project using Django, type in the command :
+```
 /django-admin startproject SE
-
+```
 If the above command doesn’t work, you may have to provide the exact path to django-admin. To find the where the file is used on the terminal.
 
 To create / start a new app (an new extention to the webpage like 127.0.0.1/player) use the command:
+```
 python manage.py startapp player 
-
+```
 A great advantage of using Django is that it allows the programming to use python logic regarding the if statements and classes to render the page according. A simple example is isitchristmas.com where the entire page is render over the date check.
 
 To be able to run the Django project on your local machine after a git clone of the project you can use the commmand :
