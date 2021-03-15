@@ -23,10 +23,14 @@ To be able to run the Django project on your local machine after a git clone of 
 If the above command does not function this maybe because you have to activate a virtual environment for python:
 To activate the environment : source newenv/bin/activate
 
-To install the virtual environment : sudo pip3 install virtualenv 
-
-and the create the virtual environment using : virtualenv newenv 
-
+To install the virtual environment : 
+```
+sudo pip3 install virtualenv 
+```
+and the create the virtual environment using : 
+```
+virtualenv newenv 
+```
 There are additional css files created in the static folder "user SE/server/templates/server/syles.css". These are stactics files which Django interprets them in the same way. 
 The test are created in the tests.py file provided by Django. This can be used to create objects for each type of class. This was done for the players in the player app(folder).
 
