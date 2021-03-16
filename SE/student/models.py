@@ -11,5 +11,13 @@ class Student(models.Model):
 	time_registered = models.DateTimeField(auto_now_add=True)
 	assigned_games = models.CharField(max_length=50, null=True, default='None')
 
+	
+	inventory = models.IntegerField(default=0)
+	backorder = models.IntegerField(default=0)
+	
+	upstream_player = models.CharField(max_length=50, blank=True)
+	downstream_player = models.CharField(max_length=50, blank=True)
+	instructors = models.CharField(max_length=50, blank=True)
+	
 	def __str__(self):
 		return self.full_name

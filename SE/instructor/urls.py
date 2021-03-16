@@ -11,5 +11,10 @@ urlpatterns = [
     path('update-game/<str:pk>/', views.update_game, name='update-game'),
     path('games-list/', views.games_list, name='games-list'),
     path('delete-game/<str:pk>/', views.delete_game, name='delete-game'),
+    
+    path('freeze-game/<str:pk>/', views.freeze_game, name='freeze-game'),
+    path('unfreeze-game/<str:pk>/', views.freeze_game, name='unfreeze-game'),
+    path('reset-game/<str:pk>/', views.reset_game, name='reset-game'),
+
     # path('delete-student/<str:pk>/', views.delete_student, name='delete-student'),
 ]

@@ -129,3 +129,36 @@ def delete_game(request, pk):
 
 	context = {'form_name':form_name, 'game':game}
 	return render(request, 'instructor/delete-game.html', context)
+
+
+@login_required(login_url='login')
+def freeze_game(request, pk):
+	
+	game = Game.objects.get(game_id=pk)
+	game.is_game_active = False
+	
+	return render(request, 'instructor/games-list.html', context)
+	
+@login_required(login_url='login')
+def unfreeze_game(request, pk):
+	game = Game.objects.get(game_id=pk)
+	game.is_game_active = True
+
+	return render(request, 'instructor/games-list.html', context)
+	
+
+@login_required(login_url='login')
+def reset_game(request, pk):
+	game = Game.objects.get(game_id=pk)
+	
+	
+	game.rounds_completed = 0
+
+	
+	# students = getStudents(game.player_ids)
+	# for student in students:
+	# 	student.inventory = game.starting_inventory
+	
+
+	context = {'form_name':form_name, 'game':game}
+	return render(request, 'instructor/delete-game.html', context)
