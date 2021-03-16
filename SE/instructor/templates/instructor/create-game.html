@@ -1,0 +1,83 @@
+{% extends 'instructor/navbar.html' %}
+
+{% block content %}
+
+           
+<!-- GAME CREATION FORM -->
+<div class="login-wrap">
+  <div class="card">
+        <div class="card-header">
+            <!-- <strong>Create Game</strong> -->
+            <strong>{{ form_name }}</strong>
+        </div>
+        <div class="login-content">
+        <div class="login-form">
+          <form method="POST" action="#/">
+            {% csrf_token %}
+            <div class="form-group">
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Session Length:</label>
+                {{form.session_length}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;"> Number of weeks:</label>
+                {{form.number_weeks}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Has retailer:</label>
+                {{form.has_retailer}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Has wholesaler:</label>
+                {{form.has_wholesaler}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Player IDs:</label>
+                {{form.player_ids}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Holding cost:</label>
+                {{form.holding_cost}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Backlog cost:</label>
+                {{form.backlog_cost}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Delay length:</label>
+                {{form.info_delay}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Starting inventory:</label>
+                {{form.starting_inventory}}
+              </div>
+              <div class="form-field" style="padding-bottom: 15px;"> 
+                <label style="font-weight: bold;">Demand ID:</label>
+                {{form.demand_id}}
+              </div>                    
+            </div>
+            <div class="card-footer">
+              <a href="/games-list" class="btn btn-danger btn-sm">
+                <i class="fa fa-ban"></i> Cancel
+              </a>
+              <input type="submit" class="btn btn-primary btn-sm" value="Submit" style="cursor: pointer !important;">
+            </div>
+            <div class="errorlist" style="color: red">
+              {% for field, error in form.errors.items %}
+                  {% if field != '__all__' %}{{ field }}{% endif %} 
+                  <br>
+                  {{ error | striptags }}
+                  <br>
+              {% endfor %}
+              </div>
+          </form> 
+        </div>
+    </div>
+</div>
+
+<script>
+  var form_fields = document.getElementsByTagName('input')
+  form_fields['player_ids'].placeholder = "Enter ids of players separated by , (e.g. 1,2,3,4)"
+</script>
+  
+{% endblock %}
