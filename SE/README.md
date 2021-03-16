@@ -37,3 +37,7 @@ March 16
 Restructured project to make it easier for subsequent work :)
 
 Not much work has been done on backend development of project so we decided to rewrite functionality.
+
+**Credentials for admin dashboard:**\
+Email: ``` nodirbek@gmail.com```\
+Password: ``` manager```
