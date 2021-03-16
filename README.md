@@ -1,5 +1,5 @@
-# se-01-team-29
-SE Sprint 01, Team 29
+# se-02-team-29
+SE Sprint 02, Team 29
 
 Looking at the documentation provided for implementation, there seems to be no backend system to store the data into a database. Therefore, an important improvement on the current design seems to be necessary by providing an ER diagram ("improved documentation folder") for the beer game using the information provided in the documentation such as the UML diagram. To access and edit the ER diagram use the link https://app.diagrams.net/#Hlorenzorota%2Fse-01-team-29%2Fmain%2FER_Diagram%20edit and authenticate using your github. 
 
