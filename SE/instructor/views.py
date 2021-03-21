@@ -141,11 +141,9 @@ def freeze_game(request, pk):
 	game.is_game_active = False
 	game.save()
 
-	#context = {'freeze_status':game.is_game_active}
 
 	return redirect(reverse('games-list'))
 
-	#return render(request, 'instructor/games-list.html', context)
 	
 @login_required(login_url='login')
 def unfreeze_game(request, pk):
@@ -153,10 +151,8 @@ def unfreeze_game(request, pk):
 	game.is_game_active = True
 	game.save()
 
-	#context = {'freeze_status':game.is_game_active}
 	return redirect(reverse('games-list'))
 	
-	#return render(request, 'instructor/games-list.html', context)
 	
 
 @login_required(login_url='login')

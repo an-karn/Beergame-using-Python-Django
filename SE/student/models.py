@@ -11,7 +11,7 @@ class Student(models.Model):
 	time_registered = models.DateTimeField(auto_now_add=True)
 	assigned_games = models.CharField(max_length=50, null=True, default='None')
 
-	
+	# current_game = models.ForeignKey('game.Game', null=True, on_delete=models.SET_NULL)	
 	inventory = models.IntegerField(default=0)
 	backorder = models.IntegerField(default=0)
 	
