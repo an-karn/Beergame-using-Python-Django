@@ -62,10 +62,24 @@
                             <button class="btn btn-primary btn-sm" style="background-color: grey; border: none;">Reset</button>
                         </td>
                         <td>
+                            
                             <!-- add a link to button-->
-                            <button class="btn btn-primary btn-sm" style="background-color: grey; border: none;">
-                                Freeze
-                            </button>
+                            {%if i.is_game_active %}
+                            <form action="/freeze-game/{{i.game_id}}/">
+                                <button type="submit" class="btn btn-primary btn-sm" style="background-color: grey; border: none;">
+                                    Freeze
+                                </button>
+                            </form>
+                            {% endif %}
+
+                            {%if not i.is_game_active %}
+                            <form action="/unfreeze-game/{{i.game_id}}/">
+                                <button type="submit" class="btn btn-primary btn-sm" style="background-color: grey; border: none;">
+                                    Unfreeze
+                                </button>
+                            </form>
+                            {% endif %}
+
                         </td>
                         <td>{{i.number_weeks}}</td>
                         <td>{{i.player_ids}}</td>
@@ -94,6 +108,7 @@
         </div>
     </div>
 </div>
+
 <!-- END DATA TABLE-->
 
 {% endblock %}

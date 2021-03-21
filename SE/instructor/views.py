@@ -4,6 +4,9 @@ from student.models import *
 from .models import *
 from game.models import *
 
+from django.urls import reverse
+from .urls import *
+
 from .forms import InstructorRegistrationForm
 from game.forms import GameCreationForm
 from django.contrib import messages
@@ -136,15 +139,24 @@ def freeze_game(request, pk):
 	
 	game = Game.objects.get(game_id=pk)
 	game.is_game_active = False
-	
-	return render(request, 'instructor/games-list.html', context)
+	game.save()
+
+	#context = {'freeze_status':game.is_game_active}
+
+	return redirect(reverse('games-list'))
+
+	#return render(request, 'instructor/games-list.html', context)
 	
 @login_required(login_url='login')
 def unfreeze_game(request, pk):
 	game = Game.objects.get(game_id=pk)
 	game.is_game_active = True
+	game.save()
 
-	return render(request, 'instructor/games-list.html', context)
+	#context = {'freeze_status':game.is_game_active}
+	return redirect(reverse('games-list'))
+	
+	#return render(request, 'instructor/games-list.html', context)
 	
 
 @login_required(login_url='login')
