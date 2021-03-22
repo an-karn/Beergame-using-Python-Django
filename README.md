@@ -3,7 +3,7 @@ SE Sprint 02, Team 29
 
 Contributors: Nodirbek Ibragimov, Ankit Karn
 
-# Instructions:
+## Instructions:
 1. Clone the repository:
 ```git clone https://github.com/lorenzorota/se-02-team-29.git``` 
 2. Go to SE folder
@@ -20,7 +20,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
    password: ```manager```
 
 
-# Improvements made in sprint 2:
+## Improvements made in sprint 2:
 
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
 2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
@@ -31,8 +31,8 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 
 We are not sure how player.py can be used, so we leave as it is to next sprint team.
 
-# Improvements made in sprint 1
-Web platform:
+## Improvements made in sprint 1
+### Web platform:
 - Folder labeled as "SE" is the Django framework used to create the server side of the beer game. For better understanding regarding this file, please refer to the comments which can be found in the "readme" file provided in the folder with instructions on how to run the code. 
 - Folder labeled as "beergame" containing work for the Frontend React.js interface.
 - Folder labeled as "Sprint 1" contains information regarding the SQL(creating,clearing, checking and populating).
@@ -41,7 +41,7 @@ Web platform:
 - Test cases for the Django web interface were provided in the SE/player/test.py. However, these test cases do not function yet as the table functionality provided by Django is not implemented yet.
 
 
-Ideas for additional tests:
+### Ideas for additional tests:
 - Once a player is logged_in, it should be tested if plots can be accessed. 
 - In addition, test if the different screens are available for the player. This can be done by checking if the different html pages can be rendered.
 - In the "active_in game check" file, test cases were created in order to check which player is active in which game. This is also helpful for the "player_index.html" as all the active games are to be shown instead of sample "Game #" number.
@@ -52,4 +52,5 @@ All the above changes are towards the web platform. Now we have also included re
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
 
+## Acknowledgements
 
