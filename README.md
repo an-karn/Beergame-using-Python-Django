@@ -3,9 +3,7 @@ SE Sprint 02, Team 29
 
 Contributors: Nodirbek Ibragimov, Ankit Karn
 
-
-
-Instructions:
+# Instructions:
 1. Clone the repository:
 ```git clone https://github.com/lorenzorota/se-02-team-29.git``` 
 2. Go to SE folder
@@ -20,7 +18,7 @@ Instructions:
    password: ```manager```
 
 
-Improvements made in sprint 2:
+# Improvements made in sprint 2:
 
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
 2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
@@ -31,7 +29,7 @@ Improvements made in sprint 2:
 
 We are not sure how player.py can be used, so we leave as it is to next sprint team.
 
-Improvement made till: March 09
+# Improvements made in sprint 1
 Web platform:
 - Folder labeled as "SE" is the Django framework used to create the server side of the beer game. For better understanding regarding this file, please refer to the comments which can be found in the "readme" file provided in the folder with instructions on how to run the code. 
 - Folder labeled as "beergame" containing work for the Frontend React.js interface.
