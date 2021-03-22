@@ -20,13 +20,16 @@ Instructions:
    password: ```manager```
 
 
-Improvements made:
+Improvements made in sprint 2:
+
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
 2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
 3. Due to the usage of templates and Django in this codebase and almost no progress made on it, we added some features from our previous work of sprint 1.
-4. Features added from previous sprint: unit tests, register/logging in for instructor, registration for student, game and instructor models  
-5. Features added on this sprint: added freeze/unfreeze functionality, entering game with email and game_id, extended game, student and instructor mode, template for game page, 
+4. Features added from previous sprint: unit tests, register/logging in for instructor, registration for student, game and instructor models
+5. Integration of supplystatistics.py, demand plotting script, with django project
+6. Features added on this sprint: added freeze/unfreeze functionality, entering game with email and game_id, extended game, student and instructor mode, template for game page, 
 
+We are not sure how player.py can be used, so we leave as it is to next sprint team.
 
 Improvement made till: March 09
 Web platform:
@@ -38,14 +41,10 @@ Web platform:
 - Test cases for the Django web interface were provided in the SE/player/test.py. However, these test cases do not function yet as the table functionality provided by Django is not implemented yet.
 
 
-Regarding the created tests:
-- One would be testing if the user enters as a player or an instructor. This is saved in the boolean variable in the registration form.
-- A second test was added in the "player/test.py" file. It tests whether the player is looged_in currently as no session_variables are created. We were only checking if the logged_in.html page is rendered or not. Suggestion: later this should be changed to a session variable.
-
-Additional tests should be:
+Ideas for additional tests:
 - Once a player is logged_in, it should be tested if plots can be accessed. 
 - In addition, test if the different screens are available for the player. This can be done by checking if the different html pages can be rendered.
-- In the "active_in game check" file, test cases were created in order to check which player is active in which game. This is also helpful for the "player_index.html" as all the   active games are to be shown instead of sample "Game #" number.
+- In the "active_in game check" file, test cases were created in order to check which player is active in which game. This is also helpful for the "player_index.html" as all the active games are to be shown instead of sample "Game #" number.
 
 All the above changes are towards the web platform. Now we have also included requirements files and creating entity functions:
 - The main functions for the player entity can be found in the "player.py" file regarding role,demand, shipment, inventory.
@@ -53,11 +52,4 @@ All the above changes are towards the web platform. Now we have also included re
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
 
-Finally, we added migrations (communications with an sqlite3 database) using the Python "manage.py makemigrations". In addition, some instructions would be to run python "manage.py migrate" library to apply all (create the tables) and to store all the data. To continue, run the command "python manage.py shell" and by using that it makes it possible to add new inputs like: 
 
-                                 from player.models import player;
-                                 p = player(id = 1, name='Hamlet', role='distributor', demand=20,cost='10',inventory='5');
-                                 p.save();
-
-To check the above added details, please refer to the test using "player.objects.all()" which returns the number of objects found in the set.
-All migrations are saved in the "0001.inital file" that can be found in the "player/migrations". All the above mentioned commands were used in the SE Django folder.
