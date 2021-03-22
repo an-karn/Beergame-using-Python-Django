@@ -8,7 +8,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 ```git clone https://github.com/lorenzorota/se-02-team-29.git``` 
 2. Go to SE folder
 3. Make sure you have python3 and pip3 installed
-4. Download dependencies: ```pip3 install matplotlib```
+4. Install dependencies: ```pip3 install matplotlib```
 5. Start django project:
 ```python3 manage.py runserver```
 4. For logging as instructor, use credentials: 
