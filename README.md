@@ -53,4 +53,5 @@ All the above changes are towards the web platform. Now we have also included re
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
 
 ## Acknowledgements
+1. [Django project from sprint 1 team 30](https://github.com/lorenzorota/se-01-team-30)
 
