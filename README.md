@@ -31,8 +31,8 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 - registration for student
 - game and instructor models
 ### Features added on this sprint: 
- - added freeze/unfreeze functionality
- - entering game with email and game_id 
+ - added freeze/unfreeze game on instructor dashboard
+ - added enter game with email and game_id for players/students
  - extended game, student and instructor model 
  - added template for game page
  - updated .gitignore file for .py files
