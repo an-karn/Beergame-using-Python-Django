@@ -3,7 +3,30 @@ SE Sprint 02, Team 29
 
 Contributors: Nodirbek Ibragimov, Ankit Karn
 
-Looking at the documentation provided for implementation, there seems to be no backend system to store the data into a database. Therefore, an important improvement on the current design seems to be necessary by providing an ER diagram ("improved documentation folder") for the beer game using the information provided in the documentation such as the UML diagram. To access and edit the ER diagram use the link https://app.diagrams.net/#Hlorenzorota%2Fse-01-team-29%2Fmain%2FER_Diagram%20edit and authenticate using your github. 
+
+
+Instructions:
+1. Clone the repository:
+```git clone https://github.com/lorenzorota/se-02-team-29.git``` 
+2. Go to SE folder
+3. Start django project:
+```python3 manage.py runserver```
+4. For logging as instructor, use credentials: 
+   email: ```nodib7034@gmail.com```
+   password: ```nodir1234```
+   
+   For logging as admin, use credentials: 
+   email:```nodirbek@gmail.com```
+   password: ```manager```
+
+
+Improvements made:
+1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
+2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
+3. Due to the usage of templates and Django in this codebase and almost no progress made on it, we added some features from our previous work of sprint 1.
+4. Features added from previous sprint: unit tests, register/logging in for instructor, registration for student, game and instructor models  
+5. Features added on this sprint: added freeze/unfreeze functionality, entering game with email and game_id, extended game, student and instructor mode, template for game page, 
+
 
 Improvement made till: March 09
 Web platform:
