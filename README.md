@@ -56,7 +56,7 @@ We are not sure how player.py can be used, so we leave as it is to next sprint t
 - Test cases for the Django web interface were provided in the SE/player/test.py. However, these test cases do not function yet as the table functionality provided by Django is not implemented yet.
 
 ## Testing
-Inside the project directory and run the command.  
+In SE directory run the command:  
 ```
 python manage.py test
 ```
