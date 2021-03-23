@@ -42,7 +42,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
  - extended game, student and instructor model 
  - added template for game page
  - updated .gitignore file for .py files
- - integration of supplystatistics.py, demand plotting script, with django project. Since, no data were fetched, the plot is empty for the moment.
+ - updated supplystatistics.py, demand plotting script, with django project with necessary libraries for plotting. Since, no data were fetched, the plot is empty for the moment.
  - Instructor dashboard with all the features such as reset, update, submit, freeze(which could change to unfreeze on clicking), change the number of games, monitor, info    
    sharing e.t.c It also consists table containing all information about game.
  - A split game screen is created with all the features according to the documentation provided. It consist of 4 screens: 1st one is order input screen, 2nd one is past            information about their positions, 3rd one is status information of other chain members, and 4th one is plot and settings screen.
