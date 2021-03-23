@@ -29,9 +29,8 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 ## Improvements made in sprint 2:
 
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
-2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
-3. Due to the usage of templates and Django in this codebase and almost no progress made on it, we added some features from our previous work of sprint 1.
-## Features added on this sprint:
+2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql. 
+3. The Django app was not working, so we had to replace it with new one. Due to the usage of templates and Django in this codebase and almost no progress made on it, we added some features from our previous work of sprint 1.
 ### Features from previous sprint work:
 - unit tests 
 - register/logging in for instructor
@@ -39,7 +38,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 - game and instructor models
 - templates for instructor, game and student apps
 - Instructor dashboard
-### Features from current sprint work:
+### Features added on this sprint::
 - added freeze/unfreeze game functionality on instructor dashboard
 - added enter game with email and game_id for players/students
 - extended game, student and instructor model 
