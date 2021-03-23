@@ -31,7 +31,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
 2. In 'SE' folder we noticed that the previous sprint team used both Sqlite and Mysql for managing DB, we decided to focus on using Sqlite for this sprint. We left sql commands in Sprint 1 folder, in case the next sprint decides to switch to Mysql.
 3. Due to the usage of templates and Django in this codebase and almost no progress made on it, we added some features from our previous work of sprint 1.
-### Features added from previous sprint: 
+### Features added from previous sprint work: 
 - unit tests 
 - register/logging in for instructor
 - registration for student
