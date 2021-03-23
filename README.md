@@ -7,7 +7,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 1. Clone the repository:
 ```git clone https://github.com/lorenzorota/se-02-team-29.git``` 
 2. Go to SE folder
-3. Make sure you have python3 and pip3 installed
+3. Make sure you have python3, pip3, django installed
 4. Install dependencies:
 5.  ```
 6.     pip3 install django-filter
