@@ -24,8 +24,11 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
    For logging as admin, use credentials: 
    email:```nodirbek@gmail.com```
    password: ```manager```
-
-
+   
+7. To run supplychainstatistics.py:
+```
+python supplychainstatistics.py
+```
 ## Improvements made in sprint 2:
 
 1. In 'beergame' folder React app contained no functionality, we decided React unnecessary for the app and deleted the folder.
