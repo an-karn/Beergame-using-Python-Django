@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.container{
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div id="div1">
+      <h3 style="text-align: center;">Input Screen for Wholeseller for Game 1</h3>
+      <p style="text-align: center;">For <b>Week 2</b></p>
+      <table id="table1"; cellspacing="5px" border="1" cellpadding="5%"; align="center">
+        <tr>
+          <td>
+      <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">
+        <tr>
+          <td>Demand from Retailer: </td>
+          <td><input type="text" name="Retailer"> </td>
+        </tr>   
+        <tr>
+          <td>On Backorder: </td>
+          <td><input type="text" name="Retailer"> </td>
+        </tr>  
+        <tr>
+          <td>Total Requirement: </td>
+          <td><input type="text" name="Retailer"> </td>
+        </tr>
+        </table>
+        </td>
+        <td>
+        <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">
+          <tr>
+            <td>Beginning inventory: </td>
+            <td><input type="text" name="Retailer"> </td>
+          </tr>   
+          <tr>
+            <td>Incoming Shipment: </td>
+            <td><input type="text" name="Retailer"> </td>
+          </tr>  
+          <tr>
+            <td>Total Available: </td>
+            <td><input type="text" name="Retailer"> </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+        <p style="text-align: center;"> Units shipped to Retailer this week: 
+          <input type="number" name="unitshipped"> <br>
+          Ending Inventory: 
+          <input type="number" name="inventory">
+          <br>
+          <br>
+          Enter the number to be purchased from distributor:
+          <input type="number" name="inventory"><br>
+          <button>Submit</button>
+        </p>
+  
+  
+  </div>
+  <div id="div2">
+  <h3 style="text-align: center;">Wholeseller information for the last ten weeks</h3>
+  <h4><b>Note:</b> The two orders placed to Wholeseller before week 1 are 4 and 4 units</h4>
+  <table id="table1"; border="1" cellpadding="5%"; align="center">
+      <tr>
+          <td>week</td>
+          <td>Inv/Bk</td>
+          <td>Demand</td>
+          <td>Incoming Ship</td>
+          <td>Outgoing Ship</td>
+          <td>Order Placed</td>
+          <td>Current Cost</td>
+      </tr>
+      <tr>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+          <td><input type ="number" name="time"></td>
+  
+      </tr>
+      </table>    
+               
+  </div>
+  <div id="div3">
+      <h3>Status of Other Supply Chain Members of Game 1</h3>
+      <p><i>The page will be refreshed every 15 seconds</i></p>
+      <br><br>
+      <p>When all the players have completed the order for the current week, the player will automatically receive a link to proceed to next week</p><br>
+      <pre style="text-align: left;"><b>Week 4</b>                                                                 The status will be updated in 9       seconds</pre>
+      <p>Factory:  <b>Has not ordered</b></p>
+      <p>Distributor:  <b>Has not ordered</b></p>
+      <p>Wholeseller:  <b>Has not ordered</b></p>
+      <p>Retailer:  <b>Has not ordered</b></p>
+  </div>
+  <div id="div4">
+      <h3>Inventory and Order Status Plot for Wholeseller</h3>
+      <pre>     <button>Demand Plot</button>      <button>Order Plot</button></pre>
+      <br><br>
+      <h3>Supply Chain Setting for Wholesaler:</h3>
+      <p>Holding Cost: <b>0.5</b><br>
+      Backorder Cost: <b>1.0</b><br>
+      Downstream Player : <span style="color: red;">Retailer</span><br>
+      Upstream Player : <span style="color: green;">Distributor</span><br>
+      Shipping Delay :  <span style="color: red;"><b>2 weeks</b></span>(Distributor- >Wholeseller, Wholeseller- >Retailer) <br>
+      Information Delay : <span style="color: green;"><b>2 weeks</b></span>(Retailer- >Wholeseller, Wholeseller- >Distributor) 
+  
+  
+      </p>
+  </div>
+  </div>
+
+</body>
+</html>

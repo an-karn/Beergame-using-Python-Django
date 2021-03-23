@@ -12,6 +12,8 @@ urlpatterns = [
     path('games-list/', views.games_list, name='games-list'),
     path('delete-game/<str:pk>/', views.delete_game, name='delete-game'),
     
+    path('about/', views.about, name='about'),
+
     path('freeze-game/<str:pk>/', views.freeze_game, name='freeze-game'),
     path('unfreeze-game/<str:pk>/', views.unfreeze_game, name='unfreeze-game'),
     

@@ -18,6 +18,9 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+def about(request):
+	return render(request, 'instructor/about.html')
+
 def instructor_registration(request):
 	if request.user.is_authenticated:
 		return redirect('dashboard')

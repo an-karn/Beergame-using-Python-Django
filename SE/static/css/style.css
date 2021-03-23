@@ -84,7 +84,7 @@ p {
 
 .index-button {
   border-radius: 20px;
-  background-color: #48aaff;
+  background-color: #48f0ffd2;
   color: #fff;
   display: inline-block;
   margin: 15px 0;
@@ -130,11 +130,11 @@ hr {
 }
 
 .cancelbtn {
-  background-color: #ff504a;
+  background-color: #ff504af1;
 }
 
 input[type=submit] {
-  background-color: #3bbd2a;
+  background-color: #3bbd2af3;
   border:none;
   font-family: "Poppins", sans-serif;
   font-size: 16px;

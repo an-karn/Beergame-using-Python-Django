@@ -66,6 +66,6 @@ def add_to_assigned_games(student, game_id):
 	student.save()
 
 def play_game(request, pk):
-	return render(request, 'student/student-home.html')
+	return render(request, 'student/playerscreen.html')
 # def create_game(request):
 # 	return HttpResponse('Create Game')
