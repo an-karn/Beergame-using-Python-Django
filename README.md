@@ -36,6 +36,7 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 - register/logging in for instructor
 - registration for student
 - game and instructor models
+- templates for instructor, game and student apps
 ### Features added on this sprint: 
  - added freeze/unfreeze game on instructor dashboard
  - added enter game with email and game_id for players/students
