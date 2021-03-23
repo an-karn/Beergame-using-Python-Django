@@ -1,4 +1,8 @@
+import pandas as pd
+import mpld3
 import matplotlib.pyplot as plt
+plt.plot()
+plt.show()
 
 class SupplyChainStatistics:
     
@@ -116,5 +120,5 @@ class SupplyChainStatistics:
         plt.ylabel('Inventory')
         plt.xlabel("Weeks")
         plt.show()
-        
         return
+        plt.savefig("demand.png")
