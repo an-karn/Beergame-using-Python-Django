@@ -10,11 +10,12 @@ Contributors: Nodirbek Ibragimov, Ankit Karn
 3. Make sure you have python3 and pip3 installed
 4. Install dependencies:
 5.  ```
-6.     pip3 install matplotlib
-7.     pip3 install pandas
-8.     pip3 install mpld3 
-9.  ```
-10. Start django project:
+6.     pip3 install django-filter
+7.     pip3 install matplotlib
+8.     pip3 install pandas
+9.     pip3 install mpld3 
+10. ```
+11. Start django project:
 ```python3 manage.py runserver```
 4. For logging as instructor, use credentials: 
    email: ```nodib7034@gmail.com```
