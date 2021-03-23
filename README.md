@@ -55,6 +55,26 @@ We are not sure how player.py can be used, so we leave as it is to next sprint t
 - There are comments on the code suggesting improvement not implemented due to a shortage of time.
 - Test cases for the Django web interface were provided in the SE/player/test.py. However, these test cases do not function yet as the table functionality provided by Django is not implemented yet.
 
+## Testing
+Inside the project directory and run the command.  
+```
+python manage.py test
+```
+If you want to run a subset of your tests you can do so by specifying the full dot path to the package(s), module, TestCase subclass:
+
+Run the specified module
+```
+python3 manage.py test instructor.tests
+```
+Run the specified module
+```
+python3 manage.py test instructor.tests.test_models
+```
+Run the specified class
+```
+python3 manage.py test instructor.tests.test_models.YourTestClass
+```
+You might find this [guide](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing) on testing Django projects helpful.
 
 ### Ideas for additional tests:
 - Once a player is logged_in, it should be tested if plots can be accessed. 
