@@ -93,6 +93,7 @@ All the above changes are towards the web platform. Now we have also included re
 - Furthermore, a simple layout for the user interface was added to the "user interface file" providing the 4 screen divisions and simple interaction between them.
 - Regarding the plots required for Screen 3,a file labeled as "supplychainstatics.py" was created using the "matplotlib.pyplot" library provided by Python in order to create plots for the different player entities (Retailer,Distributor, Wholesaler,Factory)
 - Furthermore, two files labeled as "Node.js Tests" and "Node.js Tests role" were created that generate test cases using Node modules available for testing: Mocha and Chai.
+- Thank you
 
 ## Acknowledgements
 1. [Django project from sprint 1 team 30](https://github.com/lorenzorota/se-01-team-30)
